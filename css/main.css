@@ -1,0 +1,909 @@
+/* Credits: freewebtshirts template */
+/* Romes */
+
+body {
+  background: rgb(36, 36, 36) url("../img/bg-body.gif") repeat;
+  color: burlywood;
+  letter-spacing: 0.1rem;
+}
+
+ul,
+li {
+  list-style: none;
+  margin: 0;
+}
+
+.clearFix::after {
+  content: "";
+  height: 0;
+  width: 0;
+  clear: both;
+  display: table;
+}
+
+img {
+  max-width: 100%;
+}
+
+p {
+  line-height: 2rem;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: librebaskerville-bold;
+}
+
+/* ---===Header===--- */
+
+header {
+  background: transparent url("../img/bg-header.png") repeat-x;
+  padding-bottom: 1rem;
+  height: 43rem;
+}
+
+.content {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.infos,
+.navigation {
+  width: 100%;
+}
+
+.infos .profile,
+.infos .items {
+  float: left;
+  background: transparent url("../img/bg-info-links.png") no-repeat top center;
+  padding: 0 2em;
+}
+
+.infos .items {
+  float: right;
+}
+
+.infos ul li a {
+  font-size: 1.5rem;
+}
+
+.headerContent ul li {
+  float: left;
+}
+
+.profile ul li:first-child::after,
+.items ul li:first-child::after {
+  content: "|";
+  color: rgb(252, 243, 178);
+}
+
+.headerContent ul li a {
+  text-decoration: none;
+  color: rgb(252, 243, 178);
+  padding: 0 1rem;
+}
+
+.navigation {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.navigation > * {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.navigation ul li a {
+  font-family: librebaskerville-bold;
+  font-size: 1.75rem;
+  display: block;
+  padding-left: 0.3rem;
+}
+
+.navigation ul li a span {
+  padding: 1rem 1.5rem 1rem 1rem;
+  display: block;
+  letter-spacing: 0.05rem;
+}
+
+.navigation ul li a:hover,
+.activeNav {
+  background: url("../img/bg-menu-selected-left.png") no-repeat left center;
+}
+
+.navigation ul li a:hover span,
+.activeNav span {
+  background: url("../img/bg-menu-selected-right.png") no-repeat right center;
+}
+
+.navigation .logo,
+.navigation li {
+  margin: 0 0.5rem;
+}
+
+.logo {
+  width: 20%;
+}
+
+/* ---===end Header===--- */
+
+/* ---===Slide section===--- */
+
+/* some about and games section here */
+.slideBox,
+.aboutBox,
+.gamesBox {
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.slideBox h2,
+.aboutBox h2,
+.gamesBox h2 {
+  background: url("../img/bg-heading.png") no-repeat center center;
+  color: rgb(252, 243, 178);
+  height: 7rem;
+  line-height: 7rem;
+}
+
+.slideContent {
+  position: relative;
+  width: 70%;
+  margin: 1.5rem auto;
+}
+
+.mySlides {
+  display: none;
+  animation: fade 0.5s ease-out;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.25;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.mySlides .numText,
+.mySlides .caption,
+.slideContent .prev,
+.slideContent .next {
+  position: absolute;
+  padding: 1rem;
+  background-color: rgba(50, 50, 50, 0.5);
+  border-radius: 0.5rem;
+  transition: background 0.25s ease;
+}
+
+.mySlides .numText {
+  left: 2%;
+  top: 2%;
+}
+
+.mySlides .caption {
+  bottom: 8%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.slideContent .prev,
+.slideContent .next {
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  padding: 0.75rem;
+}
+
+.slideContent .prev:hover,
+.slideContent .next:hover {
+  background-color: rgba(100, 100, 100, 0.5);
+  color: rgb(209, 194, 82);
+}
+
+.slideContent .prev {
+  left: 2%;
+}
+
+.slideContent .next {
+  right: 2%;
+}
+
+.mySlides img {
+  box-shadow: 0 2px 4px 0 rgba(150, 150, 150, 0.12),
+    0 2px 10px 0 rgba(150, 150, 150, 0.16);
+}
+/* ---===end Slide section===--- */
+
+/* ---===Articles section===--- */
+
+/* some footenote styles here */
+#articleSection,
+#footerSection,
+#contactSection,
+#gamesSection,
+#aboutSection {
+  background-color: rgb(36, 36, 36);
+  border-top: 1px solid rgb(73, 73, 73);
+  border-bottom: 1px solid rgb(22, 22, 22);
+  padding: 3rem 0;
+}
+
+/* some footenote styles here */
+.articles article,
+.footNotes div {
+  text-align: center;
+  float: left;
+  width: 33%;
+  padding: 0 1rem;
+}
+
+.articles h3 {
+  background: url("../img/bg-heading2.png") no-repeat center center;
+  color: rgb(255, 255, 255);
+  font-family: librebaskerville-bold;
+  font-size: 3rem;
+  height: 7rem;
+  line-height: 7rem;
+}
+
+.articles p {
+  color: rgb(113, 114, 114);
+  line-height: 2rem;
+  height: 15rem;
+}
+
+.articles a,
+.games a {
+  text-decoration: none;
+  font-family: librebaskerville-bold;
+  background: url("../img/buttons.png") no-repeat -162px 0;
+  color: rgb(255, 255, 255);
+  width: 15.5rem;
+  display: block;
+  margin: 0 auto;
+  height: 5.5rem;
+  line-height: 5.5rem;
+}
+
+.articles a:hover,
+.games a:hover {
+  background-position: 0 0;
+  color: rgb(252, 243, 178);
+}
+
+/* ---===end Articles section===--- */
+
+/* ---===Foot Notes section===--- */
+
+#footerSection {
+  background: url("../img/bg-footer.jpg") repeat-x;
+  color: rgb(255, 255, 255);
+  margin-top: 3rem;
+  height: 21rem;
+}
+
+.footSubscribe {
+  min-width: 100%;
+}
+
+.footSubscribe input[type="email"] {
+  width: 65%;
+  padding: 0.8rem 1rem;
+  margin-right: 0.5rem;
+  border-radius: 0.5rem;
+  border: none;
+  margin-top: 0.5rem;
+}
+
+.footSubscribe input[type="submit"] {
+  background: url("../img/buttons.png") no-repeat -162px -151px;
+  width: 8.5rem;
+  height: 4rem;
+  line-height: 2rem;
+  border: none;
+  vertical-align: top;
+  cursor: pointer;
+  margin-top: 0.5rem;
+}
+
+.footSubscribe input[type="submit"]:hover {
+  background-position: 0 -151px;
+}
+
+.footNotes h3 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+  margin-bottom: 3rem;
+}
+
+.footNotes p {
+  padding: 0;
+  margin: 0;
+}
+
+.footNotes p span {
+  color: rgb(156, 156, 156);
+}
+
+.footsocials {
+  min-width: 100%;
+}
+
+.footsocials a {
+  background: url("../img/icons.png") no-repeat;
+  margin: 0 0.5rem;
+  padding: 0 1.75rem;
+}
+
+.footsocials .fb {
+  background-position: -38px 0;
+}
+
+.footsocials .fb:hover {
+  background-position: 0 0;
+}
+
+.footsocials .twit {
+  background-position: -38px -46px;
+}
+
+.footsocials .twit:hover {
+  background-position: 0 -46px;
+}
+
+.footsocials .gplus {
+  background-position: -38px -90px;
+}
+
+.footsocials .gplus:hover {
+  background-position: 0 -90px;
+}
+
+/* ---===end Foot Notes  section===--- */
+
+/* ---===copyrights  section===--- */
+
+#copySection {
+  background-color: rgb(36, 36, 36);
+  padding: 0.5rem 0;
+  text-align: center;
+  border-top: 1px solid rgb(73, 73, 73);
+}
+
+#copySection p {
+  padding: 0;
+  margin: 0.5rem 0;
+  border-top: 1px solid rgb(22, 22, 22);
+}
+/* ---===end copyrights  section===--- */
+
+/* ---===Contact us page===--- */
+#contactSection,
+#gamesSection,
+#aboutSection {
+  margin-top: 2.5rem;
+  padding: 1rem 0;
+}
+
+/* some game section here */
+.aboutBox,
+.gamesBox {
+  width: 68%;
+}
+
+.aboutBox h2,
+.gamesBox h2 {
+  margin-bottom: 2rem;
+}
+
+.contactContent div,
+.aboutContent div {
+  float: left;
+}
+
+.messageUs,
+.aboutUs {
+  width: 70%;
+}
+
+.ourInfo,
+.aboutList {
+  width: 30%;
+}
+
+.messageUs h3,
+.ourInfo h3,
+.aboutUs h3,
+.aboutList h3 {
+  font-size: 1.75rem;
+  color: rgb(123, 140, 150);
+  text-align: left;
+  margin-bottom: 4rem;
+  text-transform: uppercase;
+}
+
+.contactForm {
+  text-align: left;
+  width: 100%;
+  color: rgb(129, 136, 142);
+}
+
+.contactForm table {
+  width: 80%;
+}
+
+.contactForm tr td:first-of-type {
+  width: 30%;
+  padding-right: 0.5rem;
+}
+
+.contactForm tr {
+  line-height: 2rem;
+}
+
+.contactForm tr td {
+  padding-bottom: 2.5rem;
+  vertical-align: top;
+}
+
+.contactForm input:not([type="submit"]),
+.contactForm textarea {
+  border: none;
+  border-radius: 0.5rem;
+  min-width: 100%;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25);
+  background-color: rgb(107, 107, 107);
+  padding-left: 0.5rem;
+}
+
+.contactForm input:not([type="submit"]) {
+  height: 3rem;
+  line-height: 3rem;
+}
+
+.contactForm textarea {
+  resize: vertical;
+}
+
+.contactForm tr:last-of-type {
+  text-align: right;
+}
+
+.contactForm input[type="submit"] {
+  border: none;
+  width: 8.1rem;
+  height: 4.2rem;
+  line-height: 3rem;
+  background: url("../img/buttons.png") -162px -212px;
+  cursor: pointer;
+}
+
+.contactForm input[type="submit"]:hover {
+  background-position: 0 -212px;
+}
+
+.ourInfo,
+.aboutList {
+  text-align: left;
+  padding-left: 1.5rem;
+}
+
+.ourInfo h3,
+.aboutList h3 {
+  font-size: 1.5rem;
+  text-transform: capitalize;
+}
+
+.ourInfo h4 {
+  color: rgb(129, 136, 142);
+  font-family: "librebaskerville-regular";
+  font-size: 1.25rem;
+}
+
+.ourInfo p {
+  font-size: 1.25rem;
+  color: white;
+  margin: 0;
+  padding-bottom: 2rem;
+}
+
+.ourInfo li {
+  margin-bottom: 2rem;
+  background: url("../img/border-latest-post.gif") repeat-x left bottom;
+}
+
+/* ---===end Contact us page===--- */
+
+/* ---===Games page===--- */
+.games {
+  float: left;
+  width: 33%;
+  padding: 0.5rem 1rem;
+}
+
+.games div {
+  padding-top: 1rem;
+}
+
+.games h4 {
+  font-size: 2rem;
+  color: rgb(252, 243, 178);
+  text-align: left;
+  height: 6rem;
+}
+
+.games h4 span {
+  color: rgb(123, 140, 150);
+  padding-left: 1rem;
+}
+
+.games a {
+  letter-spacing: 0.05rem;
+  font-size: 1.25rem;
+  margin-top: 1rem;
+}
+
+/* ---===end Games page===--- */
+
+/* ---===About us page===--- */
+
+.aboutContent {
+  text-align: left;
+}
+
+.aboutUs h3,
+.aboutList h3 {
+  margin-bottom: 1.25rem;
+  text-transform: capitalize;
+  font-size: 1.75rem;
+}
+
+.aboutUs p {
+  color: rgb(255, 255, 255);
+}
+
+.aboutList ul li {
+  list-style-type: square;
+  color: rgb(251, 250, 167);
+  margin-left: 1.25rem;
+}
+
+.aboutList ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+/* ---===end About us page===--- */
+
+/* ---===Responsive Design===--- */
+@media screen and (max-width: 980px) {
+  .content {
+    width: 90%;
+  }
+
+  .navigation {
+    margin-top: 6rem;
+  }
+
+  .infos ul li a {
+    font-size: 1.1rem;
+  }
+
+  .navigation ul li a {
+    font-size: 1.1rem;
+  }
+
+  .logo {
+    width: 20%;
+  }
+
+  .articles h3 {
+    font-size: 2rem;
+  }
+
+  .footSubscribe input[type="email"] {
+    width: 100%;
+  }
+
+  .footSubscribe input[type="submit"] {
+    width: 8.5rem;
+  }
+
+  .footNotes h3 {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  /* ---===Contact us page===--- */
+
+  .contactForm table {
+    width: 90%;
+  }
+
+  /* ---===end Contact us page===--- */
+}
+
+@media screen and (max-width: 768px) {
+  .content {
+    width: 95%;
+  }
+
+  .navigation > * {
+    width: 60%;
+    margin-left: 20%;
+  }
+
+  .logo {
+    width: 100%;
+    padding-top: 1.5rem;
+  }
+
+  .logo img {
+    width: 20%;
+  }
+
+  .slideContent {
+    width: 90%;
+  }
+
+  .articles article {
+    width: 100%;
+    padding-bottom: 2rem;
+  }
+
+  .articles article:not(:last-of-type) {
+    margin-bottom: 3rem;
+    border-bottom: 1px solid rgb(22, 22, 22);
+  }
+
+  .articles p {
+    height: auto;
+  }
+
+  /* ---===Contact us page===--- */
+
+  .contactForm table {
+    width: 95%;
+  }
+
+  /* ---===end Contact us page===--- */
+
+  /* ---===Games page===--- */
+
+  .games h4 {
+    font-size: 1.5rem;
+  }
+
+  /* ---===end Games page===--- */
+}
+
+@media screen and (max-width: 600px) {
+  .navigation > * {
+    width: 70%;
+  }
+
+  .logo {
+    width: 100%;
+  }
+
+  #footerSection {
+    background-color: rgb(36, 36, 36);
+  }
+
+  .articles article,
+  .footNotes div {
+    width: 100%;
+  }
+
+  .articles article:not(:last-of-type),
+  .footNotes div:not(:last-of-type) {
+    padding-bottom: 4rem;
+  }
+
+  .footNotes p {
+    margin: 0;
+    padding: 0;
+  }
+
+  .footNotes div:nth-of-type(2) {
+    margin-top: 3rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  main {
+    overflow-x: hidden;
+  }
+
+  .navigation > * {
+    width: 90%;
+  }
+
+  .logo {
+    width: 80%;
+  }
+
+  .logo img {
+    width: 40%;
+  }
+
+  .slideBox h2 {
+    font-size: 2rem;
+  }
+
+  /* ---===Contact us page===--- */
+
+  .messageUs {
+    width: 100%;
+  }
+
+  .ourInfo {
+    width: 100%;
+  }
+
+  /* ---===end Contact us page===--- */
+
+  /* ---===Games page===--- */
+
+  .games {
+    width: 100%;
+    padding: 0.5rem 1rem;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+
+  .games div {
+    padding-top: 1rem;
+  }
+
+  .games h4 {
+    font-size: 1.5rem;
+    text-align: center;
+    height: auto;
+    padding-bottom: 0.5rem;
+  }
+
+  /* ---===end Games page===--- */
+
+  /* ---===About us page===--- */
+  .aboutUs,
+  .aboutList {
+    width: 100%;
+  }
+
+  .aboutList {
+    background: url("../img/border-latest-post.gif") repeat-x left top;
+    padding-top: 1rem;
+  }
+
+  .aboutUs h3, .aboutList h3 {
+    font-size: 1.5rem;
+  }
+
+  .aboutUs p {
+    line-height: 2.25rem;
+  }
+
+  /* ---===end About us page===--- */
+}
+
+@media screen and (max-width: 380px) {
+  .content {
+    width: 90%;
+  }
+
+  /* ---===Header---=== */
+
+  .infos .profile,
+  .infos .items {
+    padding: 0;
+    width: 50%;
+  }
+
+  .infos .profile {
+    padding-left: 1rem;
+  }
+
+  .infos .items {
+    padding-right: 1rem;
+  }
+
+  .infos .items ul {
+    float: right;
+  }
+
+  .navigation li {
+    margin: 0 0.25rem;
+  }
+
+  .headerContent ul li a {
+    padding: 0;
+  }
+
+  .infos .profile ul li {
+    padding-right: 0.5rem;
+  }
+
+  .infos .items ul li {
+    padding-left: 0.5rem;
+  }
+
+  .navigation {
+    padding-top: 2rem;
+  }
+
+  /* ---===endHeader---=== */
+
+  /* ---===Slide Section */
+  .slideBox {
+    padding: 0;
+  }
+
+  .slideBox h2 {
+    font-size: 1.5rem;
+  }
+
+  .slideContent {
+    width: 100%;
+  }
+
+  .mySlides .numText,
+  .mySlides .caption,
+  .slideContent .prev,
+  .slideContent .next {
+    padding: 0.5rem;
+    font-size: 1rem;
+  }
+
+  /* ---===endSlide Section */
+
+  /* ---===Contact us page===--- */
+
+  .aboutBox h2 {
+    font-size: 2.25rem;
+  }
+
+  .ourInfo {
+    padding-left: 0;
+  }
+
+  .messageUs h3 {
+    font-size: 1.5rem;
+  }
+
+  .ourInfo h3 {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+  }
+
+  .contactForm tr,
+  .contactForm td {
+    display: block;
+    width: 100%;
+  }
+
+  .contactForm tr td:first-of-type {
+    width: 100%;
+  }
+
+  .contactForm tr td:first-of-type {
+    padding-bottom: 0.75rem;
+    vertical-align: top;
+  }
+
+  /* ---===end Contact us page===--- */
+}
+
+@media screen and (max-width: 320px) {
+  .navigation > * {
+    margin-left: 10%;
+  }
+}
+
+/* ---===end Responsive Design===--- */
